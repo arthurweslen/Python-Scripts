@@ -1,0 +1,18 @@
+print('\n==============================')
+print('\033[1:7mDETALHANDO A VARIÁVEL RECEBIDA\033[m')
+print('==============================')
+
+valor = input('\n Digite qualquer coisa: ')
+tipo = type(valor)
+
+print('01) Tipo Primitivo: {}'.format(tipo))
+print('02) Existe algum número? {}'.format(valor.isalnum()))
+print('03) É numérico? {}'.format(valor.isnumeric()))
+print('04) É Alfa - apenas texto?  {}'.format(valor.isalpha()))
+print('05) É um caracter Ascii? {}'.format(valor.isascii()))
+print('06) É número positivo? {}'.format(valor.isdigit()))
+print('07) Tem letra minúscula? {}'.format(valor.islower()))
+print('08) Tem letra maiúscula? {}'.format(valor.isupper()))
+print('10) É um identificador válido? {}'.format(valor.isidentifier()))
+print('11) Contem apenas espaços? {}'.format(valor.isspace()))
+print('12) Inicia com letra maiúscula?: {}'.format(valor.istitle()))
