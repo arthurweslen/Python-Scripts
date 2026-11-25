@@ -8,7 +8,7 @@ import random, string, time
 
 # Criação da variavel tamanho, e um WHILE para ficar repetindo, se o usuário não digitar número
 tamanho = input('1) Escolha quantos caracteres você deseja para sua senha: ')
-while not tamanho.isnumeric() or int(tamanho) < 4:
+while not tamanho.isdecimal() or int(tamanho) < 4:
     tamanho = input('1)Escolha quantos caracteres você deseja para sua senha: ')
 tamanho = int(tamanho)
 
